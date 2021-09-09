@@ -1,0 +1,1 @@
+IF(MONTH( ***Date to validate*** ) < 7, IF(TODAY() > DATEVALUE( TEXT(YEAR(TODAY())) & "-06-30" ), "P", "C"), IF(TODAY() < DATEVALUE( TEXT(YEAR(TODAY())) & "-06-30" ), "P", "C"))
